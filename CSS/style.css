@@ -1,150 +1,193 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: hsl(240, 78%, 98%);
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(240, 78%, 98%);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .title {
-    color: hsl(233, 13%, 49%);
-    margin-bottom: 50px;
+  color: hsl(233, 13%, 49%);
+  margin-bottom: 50px;
 }
 
 .main {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: hsl(240, 78%, 98%);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-    color: hsl(232, 13%, 33%);
-    border-radius: 10px;
-    width: 300px;
-    margin: 5px;
-    z-index: 2;
-    transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(240, 78%, 98%);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  color: hsl(232, 13%, 33%);
+  border-radius: 10px;
+  width: 300px;
+  margin: 5px;
+  padding: 10px;
+  z-index: 2;
+  transition: 0.5s all;
 }
 
 .product:hover {
-    background-color: hsl(233, 13%, 49%);
-    transform: scale(1.1);
-    z-index: 3;
+  background-color: hsl(233, 13%, 49%);
+  transform: scale(1.1);
+  z-index: 3;
 }
 
 .product__name {
-    color: hsl(233, 13%, 49%);
-    font-size: 20px;
-    margin: 25px 50px 60px;
+  color: hsl(233, 13%, 49%);
+  font-size: 20px;
+  margin: 25px 50px 60px;
 }
 
 .product:hover .product__name {
-    color: hsl(240, 78%, 98%);
+  color: hsl(240, 78%, 98%);
 }
 
 .produtc__price {
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .product:hover .produtc__price {
-    color: hsl(240, 78%, 98%);
+  color: hsl(240, 78%, 98%);
 }
 
 .product__priveCurrency {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .product__list {
-    color: hsl(233, 13%, 49%);
-    list-style: none;
-    text-align: center;
-    margin-bottom: 40px;
+  color: hsl(233, 13%, 49%);
+  list-style: none;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .list__item {
-    width: 250px;
-    margin-bottom: 20px;
-    border-top: 1px solid hsl(234, 14%, 74%);
-    border-bottom: 1px solid hsl(234, 14%, 74%);
+  width: 250px;
+  margin-bottom: 20px;
+  border-top: 1px solid hsl(234, 14%, 74%);
+  border-bottom: 1px solid hsl(234, 14%, 74%);
 }
 
 .product:hover .list__item {
-    color: hsl(240, 78%, 98%);
+  color: hsl(240, 78%, 98%);
 }
 
 .product__button {
-    width: 250px;
-    height: 40px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    color: hsl(240, 78%, 98%);
-    background-color: hsl(233, 13%, 49%);
+  width: 250px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: hsl(240, 78%, 98%);
+  background-color: hsl(233, 13%, 49%);
 }
 
 .product:hover .product__button {
-    color: hsl(233, 13%, 49%);
-    background-color: hsl(240, 78%, 98%);
+  color: hsl(233, 13%, 49%);
+  background-color: hsl(240, 78%, 98%);
 }
 
 .backgroundTop {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    visibility: hidden;
+  position: fixed;
+  top: 0px;
+  right: 0px;
 }
 
 .backgroundBottom {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+    visibility: hidden;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
 }
 
 .link {
-    color: hsl(232, 13%, 33%);
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
+  color: hsl(232, 13%, 33%);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
 }
 
 .link::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    position: absolute;
-    top: 120%;
-    left: 0;
-    background: hsl(232, 13%, 33%);
-    transition: width 0.5s;
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: hsl(232, 13%, 33%);
+  transition: width 0.5s;
 }
 
 .link:hover {
-    color: hsl(232, 13%, 33%);
-    transition: all 0.5s;
+  color: hsl(232, 13%, 33%);
+  transition: all 0.5s;
 }
 
 .link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 footer {
-    margin-top: 70px;
-    color: hsl(232, 13%, 33%);
+  margin-top: 50px;
+  color: hsl(232, 13%, 33%);
+  font-size: 10px;
+  z-index: 2;
 }
+
+@media (min-width: 320px) {
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 481px) {
+  footer {
+    font-size: 15px;
+  }
+
+  .product {
+    width: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  footer {
+    font-size: 20px;
+  }
+
+  .backgroundTop {
+      visibility: visible;
+  }
+  .backgroundBottom {
+      visibility: visible;
+  }
+}
+
+@media (min-width: 1025px) {
+
+    .main {
+        flex-direction: row;
+    }
+}
+
