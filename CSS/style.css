@@ -6,7 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: hsl(240, 78%, 98%);
+    background-color: rgb(246, 246, 254);
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .title {
-    color: hsl(233, 13%, 49%);
+    color: rgb(109, 112, 141);
     margin-bottom: 50px;
 }
 
@@ -30,9 +30,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: hsl(240, 78%, 98%);
+    background-color: rgb(246, 246, 254);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-    color: hsl(232, 13%, 33%);
+    color: rgb(73, 76, 95);
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
@@ -41,19 +41,19 @@ body {
 }
 
 .product:hover {
-    background-color: hsl(233, 13%, 49%);
+    background-color: rgb(109, 112, 141);
     transform: scale(1.1);
     z-index: 3;
 }
 
 .product__name {
-    color: hsl(233, 13%, 49%);
+    color: rgb(109, 112, 141);
     font-size: 20px;
     margin: 25px 50px 60px;
 }
 
 .product:hover .product__name {
-    color: hsl(240, 78%, 98%);
+    color: rgb(246, 246, 254);
 }
 
 .produtc__price {
@@ -64,7 +64,7 @@ body {
 }
 
 .product:hover .produtc__price {
-    color: hsl(240, 78%, 98%);
+    color: rgb(246, 246, 254);
 }
 
 .product__priveCurrency {
@@ -72,7 +72,7 @@ body {
 }
 
 .product__list {
-    color: hsl(233, 13%, 49%);
+    color: rgb(109, 112, 141);
     list-style: none;
     text-align: center;
     margin-bottom: 40px;
@@ -81,12 +81,12 @@ body {
 .list__item {
     width: 250px;
     margin-bottom: 20px;
-    border-top: 1px solid hsl(234, 14%, 74%);
-    border-bottom: 1px solid hsl(234, 14%, 74%);
+    border-top: 1px solid rgb(179, 181, 198);
+    border-bottom: 1px solid rgb(179, 181, 198);
 }
 
 .product:hover .list__item {
-    color: hsl(240, 78%, 98%);
+    color: rgb(246, 246, 254);
 }
 
 .product__button {
@@ -96,13 +96,13 @@ body {
     border-radius: 5px;
     border: none;
     outline: none;
-    color: hsl(240, 78%, 98%);
-    background-color: hsl(233, 13%, 49%);
+    color: rgb(246, 246, 254);
+    background-color: rgb(109, 112, 141);
 }
 
 .product:hover .product__button {
     color: hsl(233, 13%, 49%);
-    background-color: hsl(240, 78%, 98%);
+    background-color: rgb(246, 246, 254);
 }
 
 .backgroundTop {
@@ -120,7 +120,7 @@ body {
 }
 
 .link {
-    color: hsl(232, 13%, 33%);
+    color: rgb(73, 76, 95);
     text-decoration: none;
     position: relative;
     cursor: pointer;
@@ -133,12 +133,12 @@ body {
     position: absolute;
     top: 120%;
     left: 0;
-    background: hsl(232, 13%, 33%);
+    background: rgb(73, 76, 95);
     transition: width 0.5s;
 }
 
 .link:hover {
-    color: hsl(232, 13%, 33%);
+    color: rgb(73, 76, 95);
     transition: all 0.5s;
 }
 
@@ -148,7 +148,7 @@ body {
 
 footer {
     margin-top: 50px;
-    color: hsl(232, 13%, 33%);
+    color: rgb(73, 76, 95);
     font-size: 10px;
     z-index: 2;
 }
